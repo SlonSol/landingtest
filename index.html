@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="canonical" href="https://goodguys.business/" />
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        if (savedTheme === 'light' || (!savedTheme && systemPrefersLight)) {
+          document.documentElement.classList.add('light-theme');
+        } else {
+          document.documentElement.classList.remove('light-theme');
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a122c" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description"
+          content="GoodGuys — премиум агентство по локальному SEO и продвижению бизнеса в Яндекс.Картах, Google Maps, 2GIS и Apple Maps. Получайте больше звонков, маршрутов и клиентов." />
+    <meta name="keywords"
+          content="продвижение на картах, яндекс карты, google maps, 2gis, локальное seo, маркетинг на геосервисах" />
+    <!-- Open Graph -->
+    <meta property="og:title"
+          content="GoodGuys — Продвижение бизнеса на картах и геосервисах" />
+    <meta property="og:description"
+          content="GoodGuys — продвижение бизнеса на картах (Яндекс, Google, 2GIS). Привлекаем целевых клиентов, увеличиваем число звонков и построенных маршрутов." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://goodguys.business" />
+    <meta property="og:image"
+          content="https://i.postimg.cc/htTHcbqk/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title"
+          content="GoodGuys — Продвижение бизнеса на картах и геосервисах" />
+    <meta name="twitter:description"
+          content="GoodGuys — продвижение бизнеса на картах (Яндекс, Google, 2GIS). Привлекаем целевых клиентов, увеличиваем число звонков и построенных маршрутов." />
+    <meta name="twitter:image"
+          content="https://i.postimg.cc/htTHcbqk/og-image.jpg" />
+    <title>GoodGuys — Продвижение бизнеса на картах (Яндекс, Google, 2GIS)</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap"
+          rel="stylesheet" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg" />
+    <link rel="apple-touch-icon" href="./assets/images/favicon.svg" />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Перейти к контенту</a>
+    <div class="page-shell">
+      <!-- Site Header -->
+      <header class="site-header glass-panel">
+        <a class="brand" href="/" aria-label="GoodGuys — Главная">GoodGuys</a>
+        <nav class="header-nav" id="navMenu" aria-label="Основная навигация">
+          <a href="#problems">Проблемы</a>
+          <a href="#services">Услуги</a>
+          <a href="#results">Результаты</a>
+          <a href="#process">Процесс</a>
+          <a href="#faq">Вопросы</a>
+        </nav>
+        <div class="header-actions-wrapper">
+          <button id="themeToggle"
+                  class="theme-toggle-btn"
+                  aria-label="Переключить тему">
+            <!-- Sun Icon (visible in dark theme) -->
+            <svg class="sun-icon"
+                 width="18"
+                 height="18"
+                 viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Moon Icon (visible in light theme) -->
+            <svg class="moon-icon"
+                 width="18"
+                 height="18"
+                 viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <a class="header-action"
+             href="https://t.me/goodguys_business"
+             target="_blank"
+             rel="noopener">
+            <span>Начать работу</span>
+          </a>
+          <button class="nav-toggle"
+                  id="navToggle"
+                  aria-label="Открыть меню"
+                  aria-expanded="false"
+                  aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+      <main id="main-content">
+        <!-- 1. Hero Section -->
+        <section class="hero reveal" aria-labelledby="hero-title">
+          <div class="hero-bg-glows" aria-hidden="true">
+            <div class="glow-1"></div>
+            <div class="glow-2"></div>
+          </div>
+          <div class="hero-copy">
+            <div class="badge-wrapper">
+              <span class="eyebrow-badge">Продвижение на онлайн картах</span>
+            </div>
+            <h1 id="hero-title">
+              Выше в картах,
+              <br />
+              <span class="blue-gradient-text">больше клиентов</span>
+            </h1>
+            <p class="hero-lead">
+              Помогаем бизнесу получать больше клиентов из Яндекс.Карт, Google Maps, 2GIS и Apple Maps без переплат за
+              клики.
+            </p>
+            <div class="platform-row" aria-label="Платформы продвижения">
+              <div class="platform-chip">
+                <img class="chip-icon"
+                     src="./assets/images/icon-yandex-maps.svg"
+                     alt=""
+                     aria-hidden="true" />
+                <span>Яндекс.Карты</span>
+              </div>
+              <div class="platform-chip">
+                <img class="chip-icon"
+                     src="./assets/images/icon-google-maps.png"
+                     alt=""
+                     aria-hidden="true" />
+                <span>Google Maps</span>
+              </div>
+              <div class="platform-chip">
+                <img class="chip-icon"
+                     src="./assets/images/icon-2gis.png"
+                     alt=""
+                     aria-hidden="true" />
+                <span>2GIS</span>
+              </div>
+              <div class="platform-chip">
+                <img class="chip-icon"
+                     src="./assets/images/icon-apple-maps.png"
+                     alt=""
+                     aria-hidden="true" />
+                <span>Apple Maps</span>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <a class="button button-primary"
+                 href="https://t.me/goodguys_business"
+                 target="_blank"
+                 rel="noopener">
+                <span>Обсудить проект в Telegram</span>
+              </a>
+              <a class="button button-ghost" href="#services">
+                <span>Наши услуги</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- 2. Problems Section -->
+        <section class="section problems-section reveal"
+                 id="problems"
+                 aria-labelledby="problems-title">
+          <div class="section-heading text-center">
+            <span class="eyebrow-accent">Теряете прибыль?</span>
+            <h2 id="problems-title">Почему ваш бизнес не находят на картах</h2>
+          </div>
+          <div class="problem-grid">
+            <article class="problem-card glass-panel">
+              <div class="problem-icon-wrapper red-glow">
+                <svg width="24"
+                     height="24"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <line x1="1" y1="1" x2="23" y2="23"></line>
+                </svg>
+              </div>
+              <h3>Карточка-невидимка</h3>
+              <p>
+                Ваша компания находится за пределами ТОП-10 в радиусе 1–2 км от клиента. Пользователи просто не доходят до
+                неё в результатах поиска.
+              </p>
+            </article>
+            <article class="problem-card glass-panel">
+              <div class="problem-icon-wrapper red-glow">
+                <svg width="24"
+                     height="24"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                  <line x1="1" y1="1" x2="23" y2="23"></line>
+                </svg>
+              </div>
+              <h3>Игнорирование отзывов</h3>
+              <p>
+                Низкая оценка и неотвеченные жалобы отпугивают клиентов. Люди предпочитают конкурентов с рейтингом от 4.5
+                звезд и живым диалогом.
+              </p>
+            </article>
+            <article class="problem-card glass-panel">
+              <div class="problem-icon-wrapper red-glow">
+                <svg width="24"
+                     height="24"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
+                </svg>
+              </div>
+              <h3>Пустой или устаревший профиль</h3>
+              <p>
+                Отсутствие актуального прайса, некачественные фото и неверный график заставляют пользователей сомневаться,
+                работает ли компания вообще.
+              </p>
+            </article>
+          </div>
+        </section>
+        <!-- 3. Services Section -->
+        <section class="section reveal" id="services" aria-labelledby="services-title">
+          <div class="section-heading text-center">
+            <span class="eyebrow-accent">Что мы делаем</span>
+            <h2 id="services-title">Наводим порядок в карточках и растим позиции</h2>
+          </div>
+          <div class="service-grid">
+            <article class="service-card glass-panel">
+              <div class="service-icon-wrapper">
+                <svg width="24"
+                     height="24"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+              </div>
+              <span class="service-num">01</span>
+              <h3>Оформление карточек</h3>
+              <p>
+                Упаковываем профиль: детальный прайс-лист, продающее описание, фотографии товаров, контакты и
+                SEO-подзаголовки.
+              </p>
+              <ul class="service-features-list">
+                <li>Качественный визуальный стиль</li>
+                <li>Проработка каталога услуг</li>
+              </ul>
+            </article>
+            <article class="service-card glass-panel">
+              <div class="service-icon-wrapper">
+                <svg width="24"
+                     height="24"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="22" y1="12" x2="18" y2="12"></line>
+                  <line x1="6" y1="12" x2="2" y2="12"></line>
+                  <line x1="12" y1="6" x2="12" y2="2"></line>
+                  <line x1="12" y1="22" x2="12" y2="18"></line>
+                </svg>
+              </div>
+              <span class="service-num">02</span>
+              <h3>Локальное продвижение SEO</h3>
+              <p>Поднимаем профиль в ТОП выдачи Яндекс, Google и 2GIS по ключевым геозапросам клиентов в вашем районе.</p>
+              <ul class="service-features-list">
+                <li>Сбор семантического ядра</li>
+                <li>Работа с алгоритмами ранжирования</li>
+              </ul>
+            </article>
+            <article class="service-card glass-panel">
+              <div class="service-icon-wrapper">
+                <svg width="24"
+                     height="24"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <span class="service-num">03</span>
+              <h3>Управление репутацией (SERM)</h3>
+              <p>
+                Помогаем выстроить стабильный поток положительных отзывов от клиентов и профессионально нейтрализуем
+                негатив.
+              </p>
+              <ul class="service-features-list">
+                <li>Мотивация клиентов оставлять отзывы</li>
+                <li>Официальные развернутые ответы</li>
+              </ul>
+            </article>
+            <article class="service-card glass-panel">
+              <div class="service-icon-wrapper">
+                <svg width="24"
+                     height="24"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <span class="service-num">04</span>
+              <h3>Сквозная аналитика</h3>
+              <p>Настраиваем трекинг переходов, кликов, звонков и построенных маршрутов для оценки реальной окупаемости.</p>
+              <ul class="service-features-list">
+                <li>Ежемесячные прозрачные отчеты</li>
+                <li>Отслеживание звонков (Коллтрекинг)</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+        <!-- 4. Results Section -->
+        <section class="section results-section reveal"
+                 id="results"
+                 aria-labelledby="results-title">
+          <div class="section-heading text-center">
+            <span class="eyebrow-accent">Результаты</span>
+            <h2 id="results-title">Ваша окупаемость в цифрах</h2>
+          </div>
+          <div class="results-grid">
+            <article class="result-card glass-panel">
+              <div class="result-header">
+                <span class="result-percentage">+140%</span>
+                <span class="result-trend-icon green">
+                  <svg width="18"
+                       height="18"
+                       viewBox="0 0 24 24"
+                       fill="none"
+                       stroke="currentColor"
+                       stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </div>
+              <h3>Рост видимости профиля</h3>
+              <p>Карточка появляется на первых строчках по основным поисковым запросам в радиусе охвата.</p>
+              <div class="progress-bar-container">
+                <div class="progress-bar-fill" style="width: 85%;"></div>
+              </div>
+            </article>
+            <article class="result-card glass-panel">
+              <div class="result-header">
+                <span class="result-percentage">+85%</span>
+                <span class="result-trend-icon green">
+                  <svg width="18"
+                       height="18"
+                       viewBox="0 0 24 24"
+                       fill="none"
+                       stroke="currentColor"
+                       stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </div>
+              <h3>Больше целевых звонков</h3>
+              <p>Пользователи нажимают кнопку вызова прямо из карточки, не переходя на другие сайты.</p>
+              <div class="progress-bar-container">
+                <div class="progress-bar-fill" style="width: 68%;"></div>
+              </div>
+            </article>
+            <article class="result-card glass-panel">
+              <div class="result-header">
+                <span class="result-percentage">3.2x</span>
+                <span class="result-trend-icon green">
+                  <svg width="18"
+                       height="18"
+                       viewBox="0 0 24 24"
+                       fill="none"
+                       stroke="currentColor"
+                       stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </div>
+              <h3>Построение маршрутов</h3>
+              <p>Увеличение количества клиентов, которые приехали в вашу точку по навигатору карт.</p>
+              <div class="progress-bar-container">
+                <div class="progress-bar-fill" style="width: 92%;"></div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- 5. Process Section -->
+        <section class="section process-section-wrapper reveal"
+                 id="process"
+                 aria-labelledby="process-title">
+          <div class="section-heading text-center">
+            <span class="eyebrow-accent">Процесс</span>
+            <h2 id="process-title">Как строится наша работа</h2>
+          </div>
+          <div class="process-timeline">
+            <div class="process-step-card glass-panel">
+              <div class="step-badge">Шаг 01</div>
+              <div class="step-content">
+                <h3>Глубокий гео-аудит</h3>
+                <p>
+                  Анализируем позиции вашей компании, отслеживаем конкурентов в локации, собираем семантическое ядро
+                  поисковых запросов и формируем пошаговую стратегию вывода в ТОП.
+                </p>
+              </div>
+            </div>
+            <div class="process-step-card glass-panel">
+              <div class="step-badge">Шаг 02</div>
+              <div class="step-content">
+                <h3>Оптимизация и упаковка</h3>
+                <p>
+                  Полностью пересобираем и наполняем профиль: вносим ключевые фразы, загружаем профессиональные
+                  фотографии, оформляем блок услуг и внедряем триггеры доверия.
+                </p>
+              </div>
+            </div>
+            <div class="process-step-card glass-panel">
+              <div class="step-badge">Шаг 03</div>
+              <div class="step-content">
+                <h3>Активное продвижение и ведение</h3>
+                <p>
+                  Работаем с поведенческими факторами, модерируем отзывы, запускаем локальные промо-акции и предоставляем
+                  вам прозрачную отчетность по ключевым действиям клиентов.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 6. FAQ Section -->
+        <section class="section faq-section reveal"
+                 id="faq"
+                 aria-labelledby="faq-title">
+          <div class="section-heading text-center">
+            <span class="eyebrow-accent">Частые вопросы</span>
+            <h2 id="faq-title">Ответы на популярные вопросы</h2>
+          </div>
+          <div class="faq-container">
+            <div class="faq-item glass-panel">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-1">
+                <span>Как быстро появятся первые результаты?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">
+                  <svg width="24"
+                       height="24"
+                       viewBox="0 0 24 24"
+                       fill="none"
+                       stroke="currentColor"
+                       stroke-width="2"
+                       stroke-linecap="round"
+                       stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer" id="faq-ans-1" role="region">
+                <div class="faq-answer-inner">
+                  <p>
+                    Первые результаты в виде роста показов и переходов вы заметите уже через 2–3 недели после завершения
+                    оптимизации карточек и прохождения модерации поисковыми системами.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item glass-panel">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-2">
+                <span>Нужно ли оплачивать рекламный кабинет Яндекс.Бизнес?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">
+                  <svg width="24"
+                       height="24"
+                       viewBox="0 0 24 24"
+                       fill="none"
+                       stroke="currentColor"
+                       stroke-width="2"
+                       stroke-linecap="round"
+                       stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer" id="faq-ans-2" role="region">
+                <div class="faq-answer-inner">
+                  <p>
+                    Нет, не обязательно. Наша главная задача — вывести ваш бизнес на лидирующие позиции в органическом
+                    (бесплатном) поиске карт. Платная подписка Яндекс.Бизнес может служить лишь дополнительным
+                    ускорителем.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item glass-panel">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-3">
+                <span>Какие гарантии вы предоставляете?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">
+                  <svg width="24"
+                       height="24"
+                       viewBox="0 0 24 24"
+                       fill="none"
+                       stroke="currentColor"
+                       stroke-width="2"
+                       stroke-linecap="round"
+                       stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer" id="faq-ans-3" role="region">
+                <div class="faq-answer-inner">
+                  <p>
+                    Мы работаем по официальному договору. Гарантируем качественное выполнение всех запланированных этапов
+                    работ: внутреннее SEO, проработку репутации и оптимизацию карточек под алгоритмы геосервисов.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item glass-panel">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-4">
+                <span>Что потребуется от меня для начала работы?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">
+                  <svg width="24"
+                       height="24"
+                       viewBox="0 0 24 24"
+                       fill="none"
+                       stroke="currentColor"
+                       stroke-width="2"
+                       stroke-linecap="round"
+                       stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer" id="faq-ans-4" role="region">
+                <div class="faq-answer-inner">
+                  <p>
+                    Потребуется предоставить доступ владельца или администратора к вашим текущим кабинетам на картах
+                    (Яндекс.Бизнес, Google Business Profile, 2GIS) и прислать базовые материалы: прайс-листы, фото и
+                    описание компании.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 7. Final CTA Section -->
+        <section class="section final-cta glass-panel reveal"
+                 id="contact"
+                 aria-labelledby="cta-title">
+          <div class="cta-glow-bg" aria-hidden="true"></div>
+          <div class="cta-content">
+            <span class="eyebrow-accent">Бесплатный аудит</span>
+            <h2 id="cta-title">Начните получать клиентов из карт уже в этом месяце</h2>
+            <p>
+              Оставьте заявку на бесплатный экспресс-анализ ваших карточек на картах. Мы покажем точки роста и то, как
+              обогнать конкурентов в вашей локации.
+            </p>
+            <div class="cta-actions">
+              <a class="button button-primary button-large"
+                 href="https://t.me/goodguys_business"
+                 target="_blank"
+                 rel="noopener">
+                <svg width="20"
+                     height="20"
+                     viewBox="0 0 24 24"
+                     fill="currentColor"
+                     style="margin-right: 8px">
+                  <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                </svg>
+                <span>Написать в Telegram</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Site Footer -->
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div class="footer-brand-column">
+            <a class="brand" href="/" aria-label="GoodGuys">Good<span class="brand-accent">Guys</span></a>
+            <p class="footer-desc">
+              Профессиональное продвижение локального бизнеса в геосервисах. Растим видимость, оценки и число клиентов.
+            </p>
+          </div>
+          <div class="footer-links-column">
+            <h4>Навигация</h4>
+            <nav class="footer-nav-list" aria-label="Ссылки в футере">
+              <a href="#problems">Проблемы</a>
+              <a href="#services">Услуги</a>
+              <a href="#results">Результаты</a>
+              <a href="#process">Процесс</a>
+              <a href="#faq">FAQ</a>
+            </nav>
+          </div>
+          <div class="footer-contacts-column">
+            <h4>Контакты</h4>
+            <div class="footer-contact-item">
+              <span class="contact-label">По всем вопросам:</span>
+              <a href="https://t.me/goodguys_business"
+                 class="contact-value"
+                 target="_blank"
+                 rel="noopener">@goodguys_business</a>
+            </div>
+            <div class="footer-contact-item">
+              <span class="contact-label">Режим работы:</span>
+              <span class="contact-value">Пн-Пт с 10:00 до 19:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">&copy; 2026 GoodGuys. Все права защищены.</p>
+          <p class="legal">Информация на сайте не является публичной офертой.</p>
+        </div>
+      </footer>
+    </div>
+    <!-- Main JavaScript -->
+    <script src="./assets/js/main.js" defer></script>
+  </body>
+</html>
